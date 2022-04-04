@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin:0;
+    font-family: 'Cairo';
+    box-sizing: border-box;
+}
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  body::-webkit-scrollbar-track {
+    background: #08062b;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #eb8c13 ;
+    border-radius: 6px;
+    border: 3px solid #eb8c13;
+  }
+  
+/*........................ nav ...............*/
+.bg-blue {
+    background-color: #08062b ;
+}
+.nav-color {
+    color : rgba(255,255,255,.55) !important;
+    font-family: 'Cairo';
+}
+.navbar-light .navbar-toggler-icon {
+    background-color:  rgba(255,255,255,.55) !important;
+    border-radius: 5px;
+}
+.nav-link-hover::after {
+       
+        content: "";
+        position: absolute;
+        bottom:0px;
+        right: 0px;
+        width:0px;
+        background-color: #eb8c13;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+}
+.nav-link-hover:hover::after{
+    width:100% !important;
+}
+.nav-link-hover{
+    /* overflow: hidden !important; */
+    width:fit-content;
+    position: relative;
+    font-size: 18px;
+}
+
+/***************************** header *******************************/
+.headerBg {
+    background-image: url(../imges/heroImage.jpg);
+    filter: brightness(70%) blur(4px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-content {
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.header-content h1{
+    font-size: 3rem;
+}
+.header-content h2 {
+    bottom: 20px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+/***************************** about ******************************/
+.aboutBr{
+    transition: all .3s;
+}
+.aboutBr:hover {
+  border-width: 5px !important;
+}
+/******************************services*********/
+.service {
+    width:30px;
+}
+.service-paragragh{
+    font-size: 18px;
+    line-height: 50px;
+}
+/*************************** price *************************/
+.priceButton {
+    bottom: 20px;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    transition: all .3s;
+}
+.priceButton:hover {
+    background-color: #eb8c13 !important;
+    color: #fff !important;
+}
+.priceButton-m:hover {
+    background-color: #08062b !important;
+    color: #fff !important;
+}
+.text-blue{
+    color:#08062b;
+}
+.border-blue {
+    border-color: #08062b;
+}
+
+ /*************************** work plan *********************/
+ .b-0 {
+     border: none !important;
+ }
+
+/*......................... contact-us ........................*/
+.contact-us {
+    background-color: #08062b;
+    font-size: 18px;
+}
+
+
+@media (max-width: 575.98px){
+    .extraSmall {
+        width: 70% !important;
+    }
+    .b-0 {
+        display: none !important;
+    }
+    }
